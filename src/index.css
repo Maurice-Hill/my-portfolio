@@ -1,0 +1,201 @@
+:root {
+
+--font-size-body: clamp(1.00rem, calc(0.928rem + 0.335vw), 1.33rem);
+--font-size-h4: clamp(1.33rem, calc(1.235rem + 0.445vw), 1.77rem);
+--font-size-h3: clamp(1.77rem, calc(1.642rem + 0.592vw), 2.35rem);
+--font-size-h2: clamp(2.35rem, calc(2.184rem + 0.788vw), 3.13rem);
+--font-size-h1: clamp(3.13rem, calc(2.904rem + 1.048vw), 4.16rem);
+
+--space-xs: clamp(0.250rem, calc(0.220rem + 0.139vw), 0.387rem);
+--space-sm: clamp(0.375rem, calc(0.330rem + 0.208vw), 0.581rem);
+--space-md: clamp(0.562rem, calc(0.495rem + 0.313vw), 0.871rem);
+--space-lg: clamp(0.844rem, calc(0.743rem + 0.469vw), 1.306rem);
+--space-xl: clamp(1.266rem, calc(1.115rem + 0.704vw), 1.959rem);
+--space-2xl: clamp(1.898rem, calc(1.672rem + 1.056vw), 2.939rem);
+--space-3xl: clamp(2.848rem, calc(2.508rem + 1.583vw), 4.408rem);
+
+
+--dominant-color:#090D0B;
+--primary:#55E68A;
+--secondary:#78A989;
+--card-surface:#121A15;
+--border:#294333;
+
+--primary-text:#E5EEE8;
+--secondary-text:#9AAA9F;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color: var(--dominant-color);
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    min-height:100vh;
+    margin:0;
+    h1,h2,h3,p {
+        font-family: 'Source Sans 3', sans-serif;
+    }
+
+    h1 {
+        font-size:var(--font-size-h1);
+
+        color:var(--primary-text);
+    }
+
+    h2 {
+        font-size:var(--font-size-h2);
+        color:var(--secondary);
+    }
+
+    h3 {
+        font-size:var(--font-size-h3);
+    }
+
+    h4 {
+        font-size:var(--font-size-h4);
+    }
+
+
+    span,a {
+        font-family: 'Source Code Pro','Courier New', monospace;
+    }
+
+    a {
+        color:var(--secondary);
+        text-decoration:none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color:var(--primary);
+    }
+    .cardsArea {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:var(--space-2xl);
+        background-color:#080A07;
+    }
+
+    .introductionWrapper {
+        margin-inline-start:var(--space-2xl);
+
+        span {
+            font-size: var(--font-size-h3);
+            color:var(--primary);
+            font-family: 'Source Sans 3', sans-serif;
+        }
+
+        h1 {
+            margin-block-end:0;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .pCard {
+        width:min(90%,900px);
+        height:fit-content;
+        display:grid;
+        grid-template-columns: minmax(0,2fr) minmax(0,3fr);
+        grid-template-areas: "projectData imgWrapper";
+        border-radius:1rem;
+
+        gap:var(--space-md);
+        border: 1px solid var(--border);
+        background-color: var(--card-surface);
+
+        padding: 2rem 3%;
+        .imgWrapper{
+
+            grid-area:imgWrapper;
+            border: 1px solid var(--secondary);
+            overflow:hidden;
+            padding:0.5rem;
+            border-radius: 1rem;
+            height:fit-content;
+            img {
+
+                width:100%;
+                height:auto;
+                border-radius: 1rem;
+            }
+        }
+
+        .projectData {
+            grid-area:projectData;
+            span {
+                color:var(--primary);
+            }
+        }
+
+        .projectMain {
+            span {
+                color:var(--secondary-text);
+            }
+
+            p {
+                font-size:var(--font-size-body);
+                margin-block:var(--space-md);
+            }
+            color:var(--primary-text);
+            margin-block-end:var(--space-xl);
+        }
+
+        .projectDetails {
+
+            a {
+                margin-block:var(--space-md) ;
+                display:block;
+                width:fit-content;
+            }
+                  }
+    }
+
+    .aboutMe {
+        color:var(--primary-text);
+
+        width:min(90%,900px);
+        line-height:1.8;
+        margin-inline:auto;
+
+        p {
+            font-size: 1.33rem;
+        }
+    }
+
+    .contactInfo {
+        border-top:1px solid var(--primary);
+
+        margin-block-start:var(--space-2xl);
+        padding-block:var(--space-xl);
+        padding-inline-start:var(--space-xl);
+        display:flex;
+        flex-direction:column;
+        gap:var(--space-xl);
+
+        a {
+            display:inline;
+            width:fit-content;
+        }
+
+          }
+    @media (max-width: 800px)
+    {
+        .pCard {
+            grid-template-columns:minmax(0,1fr);
+            grid-template-areas: "imgWrapper"
+                                 "projectData";
+        }
+    }
+
+}
+
+
