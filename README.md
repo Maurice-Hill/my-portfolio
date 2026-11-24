@@ -1,16 +1,45 @@
-# React + Vite
+# Personal Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio showcasing my web development projects, technical skills, and growth as a developer.
 
-Currently, two official plugins are available:
+Live Site: [View Portfolio](https://my-portfolio-drab-ten-67.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+This portfolio serves as a central place to showcase my work, document my development experience, and provide an easy way to get in touch.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Built With
 
-## Expanding the ESLint configuration
+- React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JavaScript
+
+- HTML5
+
+- CSS3
+
+- Vite
+
+### Features
+
+- Responsive layout
+
+- Project showcase with reusable React components
+
+- Data-driven project cards
+
+- Expandable project descriptions
+
+- Links to project repositories and additional information
+
+- About and contact sections
+
+### Deployment
+
+Deployed using Vercel.
+
+### Author
+
+Maurice Hill
+
+Interested in frontend development, building practical web solutions, and continuously expanding my technical skills.
